@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Digital Autoimmune Monitor",
+            "request": "launch",
+            "mainClass": "digitalautomonitor.Main",
+            "projectName": "DigitalAutoimmuneMonitor",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Run Diagnostic Smoke Tests",
+            "request": "launch",
+            "mainClass": "digitalautomonitor.SmokeTest",
+            "projectName": "DigitalAutoimmuneMonitor",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

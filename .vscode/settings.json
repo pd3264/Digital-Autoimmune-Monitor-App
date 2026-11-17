@@ -1,0 +1,54 @@
+{
+    // ─── Java Toolchain ────────────────────────────────────────────────────────
+    "java.jdt.ls.java.home": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.1\\jbr",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-25",
+            "path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.1\\jbr",
+            "default": true
+        }
+    ],
+
+    // ─── Source & Output Paths ─────────────────────────────────────────────────
+    // Source root:  src/                 (63 human-editable .java files)
+    // Build output: bin/                 (compiled .class bytecode — do NOT open)
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.compile.nullAnalysis.mode": "automatic",
+
+    // ─── Hide Compiled Binaries from Editor ───────────────────────────────────
+    // .class files are JVM bytecode (binary). They are NOT source code.
+    // Opening them in a text editor shows unreadable characters (0xCAFEBABE magic bytes).
+    // The corresponding .java source file in src/ is always the correct file to open.
+    "files.exclude": {
+        "**/.git":        true,
+        "**/.svn":        true,
+        "**/.hg":         true,
+        "**/CVS":         true,
+        "**/.DS_Store":   true,
+        "**/Thumbs.db":   true,
+        "**/bin":         true,
+        "**/*.class":     true
+    },
+
+    // ─── Hide Compiled Binaries from Search ───────────────────────────────────
+    "search.exclude": {
+        "**/bin":     true,
+        "**/*.class": true
+    },
+
+    // ─── Prevent Binary Files Opening as Text ─────────────────────────────────
+    // Forces VS Code to treat .class files as binary — never decode as UTF-8 text
+    "files.associations": {
+        "*.class": "java"
+    },
+
+    // ─── Editor Behaviour ─────────────────────────────────────────────────────
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "files.encoding": "utf8",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+}
+
